@@ -16,7 +16,7 @@ Asegúrate de tener instalado lo siguiente en tu máquina antes de comenzar:
 Clona el repositorio en tu máquina local utilizando Git.
 
 ```bash
-git clone <url_del_repositorio>
+git clone https://github.com/Xephorot/Microservices---Admin
 ```
 
 ### 2. Crear y Configurar MySQL en un Contenedor de Docker
@@ -129,3 +129,15 @@ Este comando compilará y levantará el microservicio **Admin** en un contenedor
   ```bash
   docker-compose down
   ```
+## Repositorios Relacionados
+
+Este proyecto forma parte de un conjunto de microservicios y frontend que interactúan entre sí. Asegúrate de clonar también los siguientes repositorios para tener el entorno completo:
+
+1. **Main-Service** (Microservicio Principal - MongoDB):
+   - [Repositorio Main-Service](https://github.com/Xephorot/MircroServices---Main)
+
+2. **Admin-Service** (Microservicio Admin - MySQL):
+   - [Repositorio Admin-Service](https://github.com/Xephorot/Microservices---Admin)
+
+3. **Frontend** (Interfaz de Usuario - React):
+   - [Repositorio Frontend](https://github.com/Xephorot/Frontend-MicroServices)
