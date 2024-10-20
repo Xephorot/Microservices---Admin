@@ -1,0 +1,20 @@
+services:
+  admin-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: admin_service
+    environment:
+      - DATABASE_HOST=nest-admin  # Nombre del contenedor de MySQL o localhost si la base de datos es local
+      - DATABASE_PORT=3306
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=root
+      - DATABASE_NAME=nest_admin
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    external: true
