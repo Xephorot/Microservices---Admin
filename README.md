@@ -24,7 +24,7 @@ git clone https://github.com/Xephorot/Microservices---Admin
 Si no tienes un contenedor de MySQL corriendo, ejecuta el siguiente comando para crear un contenedor de **MySQL 5.7**:
 
 ```bash
-docker run --name nest-admin --network backend -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=nest_admin mysql:5.7
+docker run --name nest-admin -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=nest_admin mysql:5.7
 ```
 
 Este comando crea un contenedor llamado `nest-admin` que:
